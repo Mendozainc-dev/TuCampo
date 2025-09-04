@@ -26,5 +26,6 @@ class CreateUser(models.Model):
     enterprise = models.CharField(max_length=30)
     ubication = models.CharField(max_length=40)
     
-    
-    
+class login(models.Model):
+    user = models.CharField(max_length=20)
+    password = models.CharField(unique=True, max_length=30)
