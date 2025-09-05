@@ -5,7 +5,7 @@ from django.core.validators import RegexValidator, MinValueValidator
 #clase para la creacion de un usuario tomando en cuenta datos generales como especificos
 class CreateUser(models.Model):
     name = models.CharField(max_length=25) 
-    lastn_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
     birthday = models.DateField( auto_now=False, auto_now_add=False)
     age = models.PositiveIntegerField(validators=[MinValueValidator(18)])
     city = models.CharField(max_length=50)
