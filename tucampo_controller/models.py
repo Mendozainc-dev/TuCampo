@@ -1,5 +1,5 @@
 from django.db import models
-from django.core.validators import RegexValidator, MinValueValidator
+from django.core.validators import RegexValidator, MinValueValidator #para evaluar los numeros 
 # Create your models here.
 
 #clase para la creacion de un usuario tomando en cuenta datos generales como especificos
@@ -17,7 +17,7 @@ class CreateUser(models.Model):
         max_length=20,
         validators=[
             RegexValidator(
-                regex=r'^\+?1?\d{9,15}$'
+                regex=r'^\+?1?\d{9,15}$' #El validador se hizo de este modo para corregir los numeros de telefono
             )
         ]
     )

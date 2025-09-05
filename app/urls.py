@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('create-user/', include('tucampo_controller.urls'))
+    path('create-user/', include('tucampo_controller.urls')) #La url es create-user/api/v1/create-user
 ]

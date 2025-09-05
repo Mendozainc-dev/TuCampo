@@ -4,5 +4,5 @@ from .models import CreateUser
 # Create your views here.
 
 class CreateUser(viewsets.ModelViewSet):
-    serializer_class = CreateUser_Serializer
-    queryset = CreateUser.objects.all() #Administrador de consultas
+    serializer_class = CreateUser_Serializer 
+    queryset = CreateUser.objects.all() #Administrador de consultas saca todas los objetos de la clase
