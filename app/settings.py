@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework', 
     'corsheaders', #para el control de puertos y relaciobes
-    'tucampo_controller', #no mover ya que si no no guarda datos
+    'controller', #no mover ya que si no no guarda datos
     'app' #la aplicacion 
 ]
 
